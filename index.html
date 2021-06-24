@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <i class="fa fa-facebook-square"></i>
+    <div class="nav-wrap">
+        <div class="nav">
+            <div class="nav-logo">
+                <h6>logo</h6>
+            </div>
+            <ul class="ul-nav">
+                <li lang="en">Home [en]</li>
+                <li lang="en">Contacts [en]</li>
+                <li lang="ch">Home [ch]</li>
+                <li lang="ch">Contacts [ch]</li>
+                <li lang="es">Home [es]</li>
+                <li lang="es">Contacts [es]</li>
+                <li lang="ar">Home [ar]</li>
+                <li lang="ar">Contacts [ar]</li>
+                <li lang="de">Home [de]</li>
+                <li lang="de">Contacts [de]</li>
+                <li lang="ru">Home [ru]</li>
+                <li lang="ru">Contacts [ru]</li>
+                <li lang="fr">Home [fr]</li>
+                <li lang="fr">Contacts [fr]</li>
+                <li lang="ja">Home [ja]</li>
+                <li lang="ja">Contacts [ja]</li>
+                <li lang="ko">Home [ko]</li>
+                <li lang="ko">Contacts [ko]</li>
+            </ul>
+            </ul>
+            <div class="buttons-wrap">
+                <button onclick="changeTheme()">
+                    THEME
+                </button>
+                <select id="language"
+                        class="language-select"
+                        name="language"
+                        onchange="handleLanguageSelect()">
+                  <option value="en">en</option>
+                  <option value="ch">ch</option>
+                  <option value="es">es</option>
+                  <option value="ar">ar</option>
+                  <option value="de">de</option>
+                  <option value="ru">ru</option>
+                  <option value="fr">fr</option>
+                  <option value="ja">ja</option>
+                  <option value="ko">ko</option>
+                </select> 
+                <button>
+                    <span lang="en">Join Us [en]</span>
+                    <span lang="ch">Join Us [ch]</span>
+                    <span lang="es">Join Us [es]</span>
+                    <span lang="ar">Join Us [ar]</span>
+                    <span lang="de">Join Us [de]</span>
+                    <span lang="ru">Join Us [ru]</span>
+                    <span lang="fr">Join Us [fr]</span>
+                    <span lang="ja">Join Us [ja]</span>
+                    <span lang="ko">Join Us [ko]</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

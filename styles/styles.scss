@@ -1,0 +1,25 @@
+@import './variables/defaults';
+@import './variables/themes';
+
+body { 
+    // font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
+    text-align:center; 
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+    background-color: $bg-primary-themed;
+    color: $font-color-primary-themed;
+}
+
+* {
+    transition: all .15s ease;
+}
+
+// Language specific styles
+    //li:lang(en) { color: red }
+    // li:lang(fr) { color: blue }
+    // li:lang(de) { color: yellow }
+
+.not-localized {
+    display: none;
+}

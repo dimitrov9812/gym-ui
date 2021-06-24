@@ -1,0 +1,34 @@
+:root {
+  --color-page-background: rgba(0, 0, 0, 0.15);
+  --color-text: black;
+  --color-border: black;
+  --color-article-background: white;
+  --color-article-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.dark {
+  --color-page-background: black;
+  --color-text: white;
+  --color-border: white;
+  --color-article-background: rgba(255, 255, 255, 0.15);
+  --color-article-shadow: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+}
+
+* {
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.not-localized {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
