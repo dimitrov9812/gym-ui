@@ -1,5 +1,8 @@
 @import './variables/defaults';
 @import './variables/themes';
+@import './mixins/mixins';
+
+// Breakpoints -> mobile -> tablet -> laptop -> desktop
 
 body { 
     // font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
@@ -9,6 +12,20 @@ body {
     border: 0;
     background-color: $bg-primary-themed;
     color: $font-color-primary-themed;
+
+    // Breakpoint test
+    @include breakpoint(mobile) {
+        background-color: red;
+    }
+    @include breakpoint(tablet) {
+        background-color: yellow;
+    }
+    @include breakpoint(laptop) {
+        background-color: pink;
+    }
+    @include breakpoint(desktop) {
+        background-color: grey
+    }
 }
 
 * {
