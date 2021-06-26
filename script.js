@@ -10,6 +10,7 @@ let elementsCount = elements.length;
 
 // Handle Language select
 let languageSelector = document.querySelector('.language-select');
+let languageSelectorDesktop = document.querySelector('.language-select-desktop');
 
 handleLanguageSelect('en');
 
@@ -17,6 +18,12 @@ function handleLanguageSelect(value) {
     selectedLanguage = languageSelector.value;
     localizePage();
 }
+
+function handleLanguageSelectDesktop(value) {
+    selectedLanguage = languageSelectorDesktop.value;
+    localizePage();
+}
+
 
 // Apply the styles on each localized element and toggle it's display propery by changing the style
 function localizePage() {

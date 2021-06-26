@@ -1,11 +1,18 @@
 
 // Colors
-$primary-bg: red;
+$primary-bg: rgb(145, 37, 28);
 $secondary-bg: yellow;
+$color-red: $primary-bg;
 $color-black: rgb(0,0,0);
 $color-white: rgb(255,255,255);
 $color-gray-light: rgba($color-white, .15);
 $color-gray-dark: rgba($color-black, .15);
+$body-light: $color-gray-light;
+$body-dark:  #121212;
+$nav-dark:  #3c3c3c;
+$nav-light: lightgrey;
+$box-shadow-light: $color-white;
+$box-shadow-dark: $color-black;
 
 // Font Sizes
 $font-xs: 0.625em;
@@ -18,6 +25,6 @@ $lineHeight-m: 1.4em;
 
 // Spacings
 $defaultSpacing-xs: 0.5rem;
-$defaultSpacing-s: 0.8;
+$defaultSpacing-s: 0.8rem;
 $defaultSpacing-m: 1rem;
 $defaultSpacing-l:1.5rem;

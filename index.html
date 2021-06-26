@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./assets/icons/font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Put your website name over here</title>
+    <title>Titan</title>
 </head>
 
 <body>
@@ -16,37 +16,84 @@
     <div class="nav-wrap">
         <div class="nav">
             <div class="nav-logo">
-                <h6>logo</h6>
+                <img src="./assets/logo/logo.png" />
+                <div class="buttons-wrap-mobile">
+                    <select id="language"
+                            class="language-select"
+                            name="language"
+                            onchange="handleLanguageSelect()">
+                      <option value="en">en</option>
+                      <option value="ch">ch</option>
+                      <option value="es">es</option>
+                      <option value="ar">ar</option>
+                      <option value="de">de</option>
+                      <option value="ru">ru</option>
+                      <option value="fr">fr</option>
+                      <option value="ja">ja</option>
+                      <option value="ko">ko</option>
+                    </select> 
+                    <button class="join-us-button">
+                        <span lang="en">Join Us [en]</span>
+                        <span lang="ch">Join Us [ch]</span>
+                        <span lang="es">Join Us [es]</span>
+                        <span lang="ar">Join Us [ar]</span>
+                        <span lang="de">Join Us [de]</span>
+                        <span lang="ru">Join Us [ru]</span>
+                        <span lang="fr">Join Us [fr]</span>
+                        <span lang="ja">Join Us [ja]</span>
+                        <span lang="ko">Join Us [ko]</span>
+                    </button>
+                    <div class="toggle-theme-button" onclick="changeTheme()">
+                        <div ></div>
+                    </div>
+                </div>
             </div>
-            <ul class="ul-nav">
-                <li lang="en">Home [en]</li>
-                <li lang="en">Contacts [en]</li>
+            <div class="ul-nav">
+                <li lang="en">Home</li>
+                <li lang="en">Team</li>
+                <li lang="en">Contacts</li>
+                <li lang="en">About</li>
                 <li lang="ch">Home [ch]</li>
+                <li lang="ch">Team [ch]</li>
                 <li lang="ch">Contacts [ch]</li>
+                <li lang="ch">About [ch]</li>
                 <li lang="es">Home [es]</li>
+                <li lang="es">Team [es]</li>
                 <li lang="es">Contacts [es]</li>
+                <li lang="es">About [es]</li>
                 <li lang="ar">Home [ar]</li>
+                <li lang="ar">Team [ar]</li>
                 <li lang="ar">Contacts [ar]</li>
+                <li lang="ar">About [ar]</li>
                 <li lang="de">Home [de]</li>
+                <li lang="de">Team [de]</li>
                 <li lang="de">Contacts [de]</li>
+                <li lang="de">About [de]</li>
                 <li lang="ru">Home [ru]</li>
+                <li lang="ru">Team [ru]</li>
                 <li lang="ru">Contacts [ru]</li>
+                <li lang="ru">About [ru]</li>
                 <li lang="fr">Home [fr]</li>
+                <li lang="fr">Team [fr]</li>
                 <li lang="fr">Contacts [fr]</li>
+                <li lang="fr">About [fr]</li>
                 <li lang="ja">Home [ja]</li>
+                <li lang="ja">Team [ja]</li>
                 <li lang="ja">Contacts [ja]</li>
+                <li lang="ja">About [ja]</li>
                 <li lang="ko">Home [ko]</li>
+                <li lang="ko">Team [ko]</li>
                 <li lang="ko">Contacts [ko]</li>
-            </ul>
-            </ul>
+                <li lang="ko">About [ko]</li>
+            </div>
             <div class="buttons-wrap">
-                <button onclick="changeTheme()">
-                    THEME
-                </button>
+                <div class="toggle-theme-button" onclick="changeTheme()">
+                    <div ></div>
+                </div>
                 <select id="language"
-                        class="language-select"
+                        class="language-select language-select-desktop"
                         name="language"
-                        onchange="handleLanguageSelect()">
+                        onchange="handleLanguageSelectDesktop()">
                   <option value="en">en</option>
                   <option value="ch">ch</option>
                   <option value="es">es</option>
@@ -57,7 +104,7 @@
                   <option value="ja">ja</option>
                   <option value="ko">ko</option>
                 </select> 
-                <button>
+                <button class="join-us-button">
                     <span lang="en">Join Us [en]</span>
                     <span lang="ch">Join Us [ch]</span>
                     <span lang="es">Join Us [es]</span>
@@ -72,15 +119,104 @@
         </div>
     </div>
 
+    <div class="welcome-background">
+        <div class="off-tag">
+            15% OFF
+        </div>
+    </div>
+
     <div class="content-wrap">
         <!-- Some example sections -->
-        <!-- <div class="section"></div>
-            <div class="section"></div>
-            <div class="section"></div> -->
+        <div class="section">
+            <img class="section-image" src="./assets/images/dumbell.jpg" />
+            <div class="section-text-wrap">
+                <div class="section-heading">Title One</div>
+                <div class="section-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </div>
+            </div>
+        </div>
+        <div class="section section-reverse">
+            <img class="section-image" src="./assets/images/dead-lift-2.jpg" />
+            <div class="section-text-wrap">
+                <div class="section-heading">Title One</div>
+                <div class="section-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <img class="section-image" src="./assets/images/dumbells-stacked.jpg" />
+            <div class="section-text-wrap">
+                <div class="section-heading">Title One</div>
+                <div class="section-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </div>
+            </div>
+        </div>
+        <div class="section section-reverse">
+            <img class="section-image" src="./assets/images/dead-lift.jpg" />
+            <div class="section-text-wrap">
+                <div class="section-heading">Title One</div>
+                <div class="section-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer-wrap">
-         
+        <div class="footer">
+            <div class="footer-section">
+                <div>
+                    <li>
+                        Find A Club
+                    </li>
+                    <li>
+                        Find A Mentor
+                    </li>
+                    <li>
+                        About our Gym
+                    </li>
+                    <li>
+                        Careers
+                    </li>
+                    <li>
+                        Memberships
+                    </li>
+                </div>
+            </div>
+            <div class="footer-section">
+                <div>
+                    <li>
+                        News
+                    </li>
+                    <li>
+                        Store
+                    </li>
+                    <li>
+                        Customer Service
+                    </li>
+                    <li>
+                        Memberships
+                    </li>
+                    <li>
+                        Coaching
+                    </li>
+                </div>
+            </div>
+            <hr class="footer-divider" />
+            <div class="footer-copyright">
+                <div class="copyright">
+                    Copyright © 1920 - 2021 Tytan Gym
+                </div>
+                <div class="social-links">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
