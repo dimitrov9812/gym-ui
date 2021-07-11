@@ -27,6 +27,7 @@ function handleLanguageSelectDesktop(value) {
 
 // Apply the styles on each localized element and toggle it's display propery by changing the style
 function localizePage() {
+    console.log(selectedLanguage)
     for (let i = 0; i < elementsCount; i++) {
         const element = elements.item(i)
         if (element.hasAttribute('lang') && element.tagName.toString() != 'HTML') {

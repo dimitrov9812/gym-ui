@@ -1,0 +1,91 @@
+.contacts {
+    .header {
+        margin-top: $defaultSpacing-l*2;
+        margin-bottom: $defaultSpacing-l*2;
+        padding: $defaultSpacing-l;
+    }
+
+    @include breakpoint(mobile) {
+        .contacts-wrap {
+            display: flex !important;
+            flex-direction: column;
+            margin-bottom: $defaultSpacing-l*2;
+            padding: $defaultSpacing-l;
+            .contact-section {
+                width: 80%;
+                margin: 0 auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                @include flexColumn();
+                .contact-section-header {
+                    color: $color-white;
+                    background-color: $primary-bg;
+                    padding: $defaultSpacing-xs;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+            
+                .contact-section-content {
+                    background-color: $body-bg-color-themed;
+                    color: $font-color-primary-themed;
+                    padding: $defaultSpacing-m;
+                    height: 100%;
+                    border-left: 1px solid $border-color-themed;
+                    border-right: 1px solid $border-color-themed;
+                    border-bottom: 1px solid $border-color-themed;          
+                }
+            }
+        }
+    
+        .side {
+            height: 400px;
+            margin-top: $defaultSpacing-l*2;
+            padding-bottom: $defaultSpacing-l*2;
+        }
+        
+        .middle {
+            height: 400px;
+            padding-bottom: $defaultSpacing-l*2;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        .contacts-wrap {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .contact-section {
+                width: 45%;
+            }
+        }
+
+        .side {
+            height: 400px;
+            margin-top: $defaultSpacing-l*2;
+            padding-bottom: $defaultSpacing-l*2;
+        }
+        
+        .middle {
+            height: 400px;
+            margin-top: $defaultSpacing-l*2;
+            padding-bottom: $defaultSpacing-l*2;
+        }
+    }
+
+    @include breakpoint(laptop) {
+        .contacts-wrap {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-around;
+            .contact-section {
+                width: 30%;
+            }
+        }
+
+        .middle {
+            height: 500px;
+        }
+    }
+}
+

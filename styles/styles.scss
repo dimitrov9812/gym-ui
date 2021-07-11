@@ -1,7 +1,10 @@
 @import './variables/defaults';
 @import './variables/themes';
 @import './mixins/mixins';
-
+@import '../styles/pages/team/team.scss';
+@import '../styles/pages/contacts/contacts.scss';
+@import '../styles/pages/about/about.scss';
+    
 // Breakpoints -> mobile -> tablet -> laptop -> desktop
 
 body { 
@@ -12,6 +15,7 @@ body {
     border: 0;
     background-color: $body-bg-color-themed;
     color: $font-color-primary-themed;
+
 
     // Breakpoint test
     // @include breakpoint(mobile) {
@@ -41,6 +45,11 @@ body {
     //li:lang(en) { color: red }
     // li:lang(fr) { color: blue }
     // li:lang(de) { color: yellow }
+
+a {
+    text-decoration: none;
+    color: $font-color-primary-themed;
+}
 
 .not-localized {
     display: none;
@@ -178,7 +187,7 @@ body {
 }
 
 .welcome-background {
-    background-image: url('../assets/images/background.jpg.jpg');
+    background-image: url('../assets/images/background.jpg');
     width: 100%;
     height: 80vh;
     background-size: cover;
@@ -313,9 +322,12 @@ body {
                         list-style: none;
                         padding-bottom: $defaultSpacing-xs/2;
 
-                        &:hover {
-                            cursor: pointer;
-                            color: black;
+                        a {
+                            color: $color-white;
+                            &:hover {
+                                cursor: pointer;
+                                color: black;
+                            }
                         }
                     }
                 }

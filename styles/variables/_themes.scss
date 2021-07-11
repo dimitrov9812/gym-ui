@@ -19,7 +19,7 @@
     --color-text-reverse: #{$color-black};
     --color-border: #{$color-white};
     --color-article-background: #{$color-gray-light};
-    --color-article-shadow: #{$color-gray-dark};
+    --color-article-shadow: #{$color-gray-light};
     --color-body-bg: #{$body-dark};
     --color-nav-bg: #{$nav-dark};
     --color-box-shadow: #{$box-shadow-dark};
@@ -35,4 +35,5 @@ $body-bg-color-themed: var(--color-body-bg);
 $nav-bg-color-themed: var(--color-nav-bg);
 $box-shadow-themed: var(--color-box-shadow);
 $primary-bg-themed: var(--color-primary);
-$primary-text-color-themed: var(--color-primary-text)
+$primary-text-color-themed: var(--color-primary-text);
+$border-color-themed: var(--color-article-shadow);
