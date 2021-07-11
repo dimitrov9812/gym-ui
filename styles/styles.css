@@ -160,8 +160,7 @@
   position: absolute;
   font-size: 4em;
   color: white;
-  -webkit-box-shadow: 2px solid black;
-          box-shadow: 2px solid black;
+  text-shadow: 2px 2px #91251c;
   font-weight: bolder;
   top: 50%;
   left: 50%;

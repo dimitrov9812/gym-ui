@@ -6,21 +6,55 @@ console.log(selectedLanguage);
 let elements = document.getElementsByTagName('*');
 let elementsCount = elements.length;
 
-
+// Handle theme select
+let theme = 'light';
 
 // Handle Language select
 let languageSelector = document.querySelector('.language-select');
 let languageSelectorDesktop = document.querySelector('.language-select-desktop');
 
-handleLanguageSelect('en');
+// Get the selected language from localstorage
+
+getGlobalLanguage();
+getGlobalTheme();
+
+function getGlobalLanguage() {
+    let language = window.localStorage.getItem('language');
+
+    console.log('localstorage language: ' + language)
+    console.log('localstorage theme: ' + theme);
+
+    if (language) {
+        selectedLanguage = language;
+    } else {
+        selectedLanguage = 'en'
+    }
+
+    localizePage();
+}
+
+function getGlobalTheme() {
+    let currentTheme = window.localStorage.getItem('theme');
+
+    if (currentTheme != 'light') {
+        changeTheme();
+    }
+}
+
+function setGlobalLanguage(language) {
+    window.localStorage.setItem('language', language)
+    console.log("LOCALSTORAGE LANGUAGE HAS BEEN SET: " + language)
+}
 
 function handleLanguageSelect(value) {
     selectedLanguage = languageSelector.value;
+    setGlobalLanguage(selectedLanguage)
     localizePage();
 }
 
 function handleLanguageSelectDesktop(value) {
     selectedLanguage = languageSelectorDesktop.value;
+    setGlobalLanguage(selectedLanguage)
     localizePage();
 }
 
@@ -55,4 +89,11 @@ function localizePage() {
 // Handle theme change =================================================================
 function changeTheme() {
     document.body.classList.toggle('dark');
+    if (theme == 'light') {
+        theme = 'dark'
+    } else {
+        theme = 'light'
+    }
+
+    window.localStorage.setItem('theme', theme);
 }
