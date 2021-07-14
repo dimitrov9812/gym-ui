@@ -9,6 +9,10 @@ let elementsCount = elements.length;
 // Handle theme select
 let theme = 'light';
 
+// Set the initial map value
+let map;
+let marker;
+
 // Handle Language select
 let languageSelector = document.querySelector('.language-select');
 let languageSelectorDesktop = document.querySelector('.language-select-desktop');
@@ -17,6 +21,7 @@ let languageSelectorDesktop = document.querySelector('.language-select-desktop')
 
 getGlobalLanguage();
 getGlobalTheme();
+initMap();
 
 function getGlobalLanguage() {
     let language = window.localStorage.getItem('language');
@@ -81,6 +86,12 @@ function localizePage() {
             }
         }
     }
+
+    setLanguagePickerValue(selectedLanguage);
+}
+
+function setLanguagePickerValue(language) {
+    languageSelectorDesktop.value = language;
 }
 
 // =====================================================================================
@@ -96,4 +107,24 @@ function changeTheme() {
     }
 
     window.localStorage.setItem('theme', theme);
+}
+
+// Handle Map Display ==================================================================
+function initMap() {
+    if (google != undefined) {
+        let location = { lat: -34.397, lng: 150.644 };
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: location,
+            zoom: 8,
+        });
+    
+        marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+}
+
+// Handle Find a Mentor Card flip
+function handleCardFlip() {
 }

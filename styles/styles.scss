@@ -4,14 +4,16 @@
 @import '../styles/pages/team/team.scss';
 @import '../styles/pages/contacts/contacts.scss';
 @import '../styles/pages/about/about.scss';
+@import '../styles/pages/find-a-club/find-a-club.scss';
+@import '../styles/pages/find-a-mentor/find-a-mentor.scss';
     
 // Breakpoints -> mobile -> tablet -> laptop -> desktop
 
 body { 
     // font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
     text-align:center; 
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     border: 0;
     background-color: $body-bg-color-themed;
     color: $font-color-primary-themed;

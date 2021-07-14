@@ -1,0 +1,16 @@
+.heading {
+    color: $font-color-primary-themed;
+    padding: $defaultSpacing-m;
+    margin: $defaultSpacing-m;
+
+    @include breakpoint(mobile) {
+        font-size: $font-xl;
+    }
+}
+
+.map {
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-bottom: $defaultSpacing-m*6;
+}
