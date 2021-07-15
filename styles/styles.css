@@ -439,6 +439,7 @@
     height: 5px;
     background-color: #91251c;
     color: #91251c;
+    border: none;
     margin: 3rem;
   }
 }
