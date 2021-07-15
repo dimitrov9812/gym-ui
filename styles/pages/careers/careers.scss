@@ -15,7 +15,7 @@
         img {
 
             @include breakpoint(mobile) {
-                width: 80vw;
+                width: 90vw;
             }
             
             @include breakpoint(tablet) {
@@ -60,6 +60,7 @@
                 width: 30%;
                 height: 5px;
                 background-color: $primary-bg;
+                color: $primary-bg;
                 margin: $defaultSpacing-l*2;
             }
         }

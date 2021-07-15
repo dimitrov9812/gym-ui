@@ -373,7 +373,7 @@
 
 @media screen and (min-width: 320px) {
   .content .heading img {
-    width: 80vw;
+    width: 90vw;
   }
 }
 
@@ -438,6 +438,7 @@
     width: 30%;
     height: 5px;
     background-color: #91251c;
+    color: #91251c;
     margin: 3rem;
   }
 }
