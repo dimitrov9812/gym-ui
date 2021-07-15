@@ -371,8 +371,16 @@
   }
 }
 
-.content .heading img {
-  width: 40vw;
+@media screen and (min-width: 320px) {
+  .content .heading img {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .content .heading img {
+    width: 40vw;
+  }
 }
 
 .content .heading .primary-heading {
