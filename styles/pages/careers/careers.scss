@@ -1,0 +1,84 @@
+.content {
+    .heading {
+        padding: $defaultSpacing-m;
+
+        @include breakpoint(mobile) {
+            @include flexColumnCentered();
+        }
+
+        @include breakpoint(tablet) {
+            @include flexRowCentered();
+            justify-content: space-around;
+            padding: $defaultSpacing-l*2;
+        }
+
+        img {
+            width: 40vw;
+        }
+
+        .primary-heading {
+            color: $font-color-primary-themed;
+            padding: $defaultSpacing-xs;
+
+            @include breakpoint(mobile) {
+                font-size: $font-l;
+            }
+
+            @include breakpoint(tablet) {
+                font-size: $font-xxl;
+            }
+        }
+
+        .secondary-heading {
+            color: $color-gray;
+            padding: $defaultSpacing-xs;
+
+            @include breakpoint(mobile) {
+                font-size: $font-s/1.2;
+            }
+
+            @include breakpoint(tablet) {
+                font-size: $font-l;
+            }
+        }
+    }
+
+    .careers-wrapper {
+
+        @include breakpoint(mobile) {
+            @include flexColumnCentered();
+            
+            .divider {
+                display: block;
+                width: 30%;
+                height: 5px;
+                background-color: $primary-bg;
+                margin: $defaultSpacing-l*2;
+            }
+        }
+
+        @include breakpoint(tablet) {
+            @include flexRow();
+            flex-wrap: wrap;
+
+            .divider {
+                display: none;
+            }
+        }
+        .career-card {
+            width: 360px;
+            min-height: 500px;
+            padding: $defaultSpacing-m;
+            margin: $defaultSpacing-m;
+            
+            .career-card-image {
+                img {
+                    width: 50%;
+                    padding-bottom: $defaultSpacing-l*2;
+                }
+            }
+        }
+    }
+
+    
+}
