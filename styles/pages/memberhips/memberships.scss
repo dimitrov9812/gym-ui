@@ -1,0 +1,107 @@
+.memberships-content {
+    margin: $defaultSpacing-m;
+    padding: $defaultSpacing-m;
+
+    @include flexColumnCentered();
+
+    .memberships-title-wrap {
+        @include flexColumnCentered();
+
+        .memberships-title {
+            margin: $defaultSpacing-m;
+            margin-bottom: $defaultSpacing-s;
+            font-size: $font-xxl;
+            font-weight: bolder;
+        }
+
+        .memberships-sub-title {
+            margin: $defaultSpacing-m;
+            margin-top: $defaultSpacing-xs;
+            margin-bottom: $defaultSpacing-l*4;
+            font-size: $font-s*1.2;
+        }
+    }
+
+    .membership-cards-wrap {
+        margin: 0 auto;
+
+        @include breakpoint(mobile) {
+            width: 80%;
+            @include flexColumnCentered();
+        }
+
+        @include breakpoint(tablet) {
+            width: 100%;
+            @include flexRowCentered();
+            justify-content: space-around;
+        }
+
+        .membership-card {
+            width: 100%;
+            height: 500px;
+            margin: $defaultSpacing-m;
+            border: 1px solid $border-color-themed;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+            @include flexColumnCentered();
+            justify-content: space-around;
+
+            .membership-title {
+                width: 100%;
+                background-color: $primary-bg;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding-top: $defaultSpacing-m;
+                padding-bottom: $defaultSpacing-m;
+                font-size: $font-xl;
+                color: $color-white;
+            }
+
+            .membership-price {
+                width: 100%;
+                padding: $defaultSpacing-m;
+                font-size: $font-xxl*1.5;
+                color: $font-color-primary-themed;
+
+                .price {
+                    font-size: $font-xl;
+
+                    .price-currency {
+                        font-size: $font-s;
+                        font-weight: bolder;
+                    }
+                }
+            }
+
+            .membership-details-wrap {
+                flex: 1;
+                
+                @include flexColumn();
+                align-items: flex-start;
+
+                @include breakpoint(mobile) {
+                    width: 100%;
+                }
+
+                @include breakpoint(laptop) {
+                    width: 60%;
+                }
+
+                .membership-detail {
+                    @include flexRowCentered();
+
+                    margin: $defaultSpacing-m;
+
+                    i {
+                        padding-right: $defaultSpacing-m;
+                        color: $primary-bg;
+                        font-size: $font-xl;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+    }
+}
