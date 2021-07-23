@@ -881,8 +881,8 @@ a {
 .nav-wrap .nav .join-us-button {
   border: none;
   padding: 0.45455rem;
-  background-color: var(--color-primary);
-  color: var(--color-primary-text);
+  background-color: #91251c;
+  color: white;
   font-size: 1.125em;
 }
 

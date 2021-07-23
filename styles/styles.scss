@@ -183,8 +183,8 @@ a {
         .join-us-button {
             border: none;
             padding: $defaultSpacing-xs / 1.1;
-            background-color: $primary-bg-themed;
-            color: $primary-text-color-themed;
+            background-color: $primary-bg;
+            color: $color-white;
             font-size: $font-l;
         }
     }
